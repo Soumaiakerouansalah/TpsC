@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Tp2_1
 {
-    internal class Program
-    {
-        static void Main(string[] args)
+ 
+   
+        internal class Program
         {
-            Employee employee1 = new Employee("MALAK", 3000, "manager", new DateTime(2023, 04, 24));
+            static void Main(string[] args)
+            {
+                Employee employee1 = new Employee("MALAK", 3000, "manager", new DateTime(2023, 04, 24));
 
-            GestionEmployes Emps = new GestionEmployes();
+                GestionEmployes Emps = new GestionEmployes();
 
-            Emps.ajouterEmp(new Employee("soumaia", 3000, "manager", new DateTime(2023, 04, 24)));
-            Emps.ajouterEmp(new Employee("safae", 4000, "manager", new DateTime(2023, 04, 24)));
-            Emps.ajouterEmp(employee1);
-            Emps.AfficherEmployes();
+                Emps.ajouterEmp(new Employee("soumaia", 3000, "manager", new DateTime(2023, 04, 24)));
+                Emps.ajouterEmp(new Employee("safae", 4000, "manager", new DateTime(2023, 04, 24)));
+                Emps.ajouterEmp(employee1);
 
+            }
         }
-    }
+
+    
 }
-
-
-

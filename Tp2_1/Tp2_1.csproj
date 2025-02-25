@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E570ACE4-A5AE-47F4-AE2E-53356997B262}</ProjectGuid>
+    <ProjectGuid>{E93EBF13-1C61-454F-A311-CE3D1A59BE30}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tp2_2</RootNamespace>
-    <AssemblyName>Tp2_2</AssemblyName>
+    <RootNamespace>Tp2_1</RootNamespace>
+    <AssemblyName>Tp2_1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Biblio.cs" />
-    <Compile Include="Dictionnaire.cs" />
-    <Compile Include="Document.cs" />
-    <Compile Include="Livre.cs" />
+    <Compile Include="Directeur.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="GestionEmployes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
