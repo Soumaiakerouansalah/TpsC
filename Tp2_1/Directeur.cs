@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tps
+namespace Tp2_1
 {
     class Directeur
     {
         private static Directeur instance;
         private GestionEmployes gestionEmployes;
 
-        // Constructeur privé (Singleton)
+        // Constructeur privé (Singleton)
         private Directeur()
         {
             gestionEmployes = new GestionEmployes();
         }
 
-        // Méthode pour récupérer l'instance unique du directeur
+        // Méthode pour récupérer l'instance unique du directeur
         public static Directeur GetInstance()
         {
             if (instance == null)
@@ -27,7 +27,7 @@ namespace Tps
             return instance;
         }
 
-        // Permet de modifier la gestion des employés
+        // Permet de modifier la gestion des employés
         public void SetGestionEmployes(GestionEmployes gestion)
         {
             gestionEmployes = gestion;
@@ -42,10 +42,10 @@ namespace Tps
         // Afficher le salaire moyen
         public void AfficherSalaireMoyen()
         {
-            Console.WriteLine($"Salaire moyen des employés : {gestionEmployes.CalculerSalaireMoyenne()}DH");
+            Console.WriteLine($"Salaire moyen des employés : {gestionEmployes.CalculerSalaireMoyenne()}DH");
         }
 
-        // Afficher tous les employés
+        // Afficher tous les employés
         public void AfficherEmployes()
         {
             gestionEmployes.AfficherEmployes();

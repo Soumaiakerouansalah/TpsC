@@ -4,38 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tps
+namespace Tp2_1
 {
-     class GestionEmployes
+    class GestionEmployes
     {
         List<Employee> employees;
         public GestionEmployes()
         {
-           employees = new List<Employee>();
+            employees = new List<Employee>();
         }
 
-        public void ajouterEmp(Employee employee) {
+        public void ajouterEmp(Employee employee)
+        {
             employees.Add(employee);
-            Console.WriteLine("employe ajouté avec succes");
-                }
+            Console.WriteLine("employe ajouté avec succes");
+        }
         public void SupprimerEmp(Employee employe)
         {
             employees.Remove(employe);
-            Console.WriteLine("employe est  suprimmé avec succes");
+            Console.WriteLine("employe est  suprimmé avec succes");
         }
-         
+
         public double CalculerSalaireTotal()
         {
-            if (employees.Count > 0) 
-            return employees.Sum(e => e.Salaire);
+            if (employees.Count > 0)
+                return employees.Sum(e => e.Salaire);
             return 0;
         }
 
         public double CalculerSalaireMoyenne()
-        {    
-         
-           return employees.Count > 0 ? employees.Average(e => e.Salaire) :0 ;
-         
+        {
+
+            return employees.Count > 0 ? employees.Average(e => e.Salaire) : 0;
+
 
         }
 
@@ -43,11 +44,11 @@ namespace Tps
         {
             if (employees.Count == 0)
             {
-                Console.WriteLine("Aucun employé enregistré.");
+                Console.WriteLine("Aucun employé enregistré.");
                 return;
             }
 
-            Console.WriteLine("Liste des employés :");
+            Console.WriteLine("Liste des employés :");
             foreach (var employe in employees)
             {
                 Console.WriteLine(employe);

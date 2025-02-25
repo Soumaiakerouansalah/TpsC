@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tps
+namespace Tp2_1
 {
-     class Employee
+    class Employee
     {
         String nom;
         double salaire;
@@ -21,7 +21,7 @@ namespace Tps
             this.dateEmbauche = dateEmbauche;
         }
         public String getNom() { return nom; }
-    public double Salaire
+        public double Salaire
         {
             get { return salaire; }
             set { salaire = value; }

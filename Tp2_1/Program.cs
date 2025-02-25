@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tps
+namespace Tp2_1
 {
     internal class Program
     {
@@ -14,11 +14,14 @@ namespace Tps
 
             GestionEmployes Emps = new GestionEmployes();
 
-         Emps.ajouterEmp(new Employee("soumaia", 3000, "manager", new DateTime(2023, 04, 24)));
+            Emps.ajouterEmp(new Employee("soumaia", 3000, "manager", new DateTime(2023, 04, 24)));
             Emps.ajouterEmp(new Employee("safae", 4000, "manager", new DateTime(2023, 04, 24)));
             Emps.ajouterEmp(employee1);
+            Emps.AfficherEmployes();
 
         }
     }
-
 }
+
+
+
